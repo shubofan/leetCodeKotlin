@@ -18,7 +18,6 @@ class Solution {
         var ll2 = l2
 
         while(ll1 != null && ll2 != null) {
-
             if(ll1.`val` < ll2.`val`) {
                 cur?.next = ll1
                 ll1 = ll1.next
@@ -27,7 +26,6 @@ class Solution {
                 cur?.next = ll2
                 ll2 = ll2.next
             }
-
             cur = cur?.next
         }
 
@@ -38,7 +36,6 @@ class Solution {
         if (ll2 != null) {
             cur?.next = ll2
         }
-
         return dummyHead?.next
     }
 }
