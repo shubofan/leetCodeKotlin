@@ -6,7 +6,7 @@ class Solution {
 
         var map = mutableMapOf<Char,Int?>()
 
-        t.toCharArray().forEach { c -> map[c] = map.getOrDefault(c, 0) + 1 }
+        t.toCharArray().forEach { c -> map[c] = map.getOrDefault(c, 0)?.plus(1) }
 
         var l = 0
         var r = 0
