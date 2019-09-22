@@ -1,4 +1,4 @@
-package src.Array
+package Array
 
 class Solution {
     fun threeSum(nums: IntArray): List<List<Int>> {

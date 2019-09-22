@@ -1,4 +1,4 @@
-package src.Math
+package Math
 
 class Solution {
     fun isPalindrome(x: Int): Boolean {

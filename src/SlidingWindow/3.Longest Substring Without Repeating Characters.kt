@@ -1,4 +1,4 @@
-package src.SlidingWindow
+package SlidingWindow
 
 class Solution {
     fun lengthOfLongestSubstring(s: String): Int {
