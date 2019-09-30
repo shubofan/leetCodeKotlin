@@ -1,6 +1,6 @@
 package Tree
 
-import java.util.*
+import java.util.LinkedList
 
 class Solution {
     fun rightSideView(root: TreeNode?): List<Int> {
@@ -26,3 +26,4 @@ class Solution {
         return res
     }
 }
+
