@@ -25,18 +25,12 @@ class Solution {
 		var sb = StringBuilder()
 		while(stack.isNotEmpty()) {
 			sb.append(stack.pop().c)
-			var pp = P('a', 3)
-			pp.
 		}
 		return sb.reverse().toString()
 	}
 }
 
-private class P(c: Char, i: Int) {
-	var c: Char
-	get() = this.c
-	set(value) {c}
-
-	var fre: Int = ic
-	get()
+private class P(c: Char, fre: Int) {
+	var c = c
+	var fre = fre
 }

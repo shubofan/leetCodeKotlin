@@ -8,15 +8,13 @@ class Solution {
         if(str == null || str == "") return ""
 
         var sb = StringBuilder()
-        var index = 0
 
-        for(c in str.toCharArray()) {
+        for((index, c) in str.toCharArray().withIndex()) {
             for(i in 1 until strs.size) {
                 var s = strs[i]
                 if(s == null || s == "") return ""
                 if(index > s.length - 1 || c != strs[i][index]) return sb.toString()
             }
-            index ++
             sb.append(c)
         }
         return sb.toString()

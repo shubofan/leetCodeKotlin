@@ -1,7 +1,7 @@
 package Array
 
 class Solution {
-	fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
+	fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
 		var ll1 = m - 1
 		var ll2 = n - 1
 

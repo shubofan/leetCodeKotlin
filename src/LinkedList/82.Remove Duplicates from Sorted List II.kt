@@ -15,7 +15,7 @@ class ListNode(var `val`: Int) {
 
 class Solution {
     fun deleteDuplicates(head: ListNode?): ListNode? {
-        if(head == null || head?.next == null) return head
+        if(head?.next == null) return head
         var dummy = ListNode(0)
         dummy.next = head
 
@@ -32,7 +32,7 @@ class Solution {
                 cur = cur.next
                 isDuplicate = false
             } else {
-                pre = pre.next
+                pre = pre.next!!
                 cur = cur.next
             }
         }
