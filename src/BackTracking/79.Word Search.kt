@@ -22,7 +22,7 @@ class Solution {
 		if(used[x][y]) return false
 		if(word[i] != board[x][y]) return false
 		used[x][y] = true
-		var res = search(board, word, used, x + 1, y, i + 1) || search(board, word, used, x - 1, y, i + 1) || search(board, word, used, x, y + 1, i + 1) ||search(board, word, used, x, y - 1, i + 1)
+		var res = search(board, word, used, x + 1, y, i + 1) || search(board, word, used, x - 1, y, i + 1) || search(board, word, used, x, y + 1, i + 1) || search(board, word, used, x, y - 1, i + 1)
 		used[x][y] = false
 		return res
 	}
