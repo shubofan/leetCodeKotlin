@@ -9,11 +9,12 @@ class Solution {
         // [j, i] sliding window
         for (i in s.indices) {
             if (m.contains(s[i])) {
-                j = Math.max(j, m[s[i]]?.plus(1)!!)
+                j = maxOf(j, m[s[i]]?.plus(1)!!)
             }
             m[s[i]] = i
-            res = Math.max(res, i - j + 1)
+            res = maxOf(res, i - j + 1)
         }
         return res
     }
 }
+
